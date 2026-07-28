@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"/><title>com.pie</title>
+  <meta name="description" content="기헌">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png">
+ <base href="compies.xyz">
+ 
+ </head>
+ 
+<!--콘솔창 차단 스크립트-->
+<script>
+!function() {
+  function detectDevTool(allow) {
+    if(isNaN(+allow)) allow = 100;
+    var start = +new Date(); 
+    debugger;
+    var end = +new Date(); 
+    if(isNaN(start) || isNaN(end) || end - start > allow) {
+      // 개발자 도구가 open 된것을 감지했을때 실행할 코드 삽입
+    }
+  }
+  if(window.attachEvent) {
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        detectDevTool();
+      window.attachEvent('onresize', detectDevTool);
+      window.attachEvent('onmousemove', detectDevTool);
+      window.attachEvent('onfocus', detectDevTool);
+      window.attachEvent('onblur', detectDevTool);
+    } else {
+        setTimeout(argument.callee, 0);
+    }
+  } else {
+    window.addEventListener('load', detectDevTool);
+    window.addEventListener('resize', detectDevTool);
+    window.addEventListener('mousemove', detectDevTool);
+    window.addEventListener('focus', detectDevTool);
+    window.addEventListener('blur', detectDevTool);
+  }
+}();
+</script>
+<!--콘솔창 차단 스크립트 끝-->
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+    <!--
+    var logger = function() {
+        var oldConsoleLog = null;
+        var pub = {};
+        pub.enableLogger = function enableLogger() {
+            if (oldConsoleLog == null)
+                return;
+            window['console']['log'] = oldConsoleLog;
+        };
+        pub.disableLogger = function disableLogger() {
+            oldConsoleLog = console.log;
+            window['console']['log'] = function() {};
+        };
+        return pub;
+    }();
+  </script>
+
+
+<div style="position : relative; height: 100dvh ;   
+	display: flex;
+  justify-content: center;
+align-item : middle;">
+<div style="position: absolute; display: flex;  text-align:center;  flex-direction: column;  top: 30%; gap: 0.5em;">
+
+ <span style= "font-size:1.5em;">   <strong>공사중...</strong>
+   </span>
+ <span style= "padding-top:3em;">기헌    </span>
+ <span style= "padding-top:1.5em;"> <strong>연락  CONTACTS </strong></span>
+  <span> info@compies.xyz </span>
+  <span><a href='https://www.instagram.com/com.pies/' target='_blank'> IG @com.pies </a></span>
+</div>   
+
+
+</body></html>
